@@ -6,6 +6,6 @@ export const configs = {
     github: process.env.REACT_APP_GITHUB_URL,
     corona: process.env.REACT_APP_CORONA_URL
   },
-  sentry: process.env.REACT_APP_SENTRY_DNS,
+  sentry: process.env.REACT_APP_SENTRY_DSN,
   onesignal: process.env.REACT_APP_ONE_SIGNAL!
 }
