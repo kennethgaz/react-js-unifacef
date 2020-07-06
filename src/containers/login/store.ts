@@ -13,10 +13,9 @@ export default class LoginStore {
   };
 
   @action handleSubmit = () => {
-
     const credentials = {
-      email: 'fcamedeiros@gmail.com',
-      password: 'batata'
+      email: 'kendao@gmail.com',
+      password: '123'
     };
 
     if (this.email !== credentials.email || this.password !== credentials.password) {
@@ -26,14 +25,14 @@ export default class LoginStore {
 
     const data = {
       email: credentials.email,
-      name: 'Fabricio Medeiros'
+      name: 'Kenneth G. de Azevedo'
     };
 
     setAuth(JSON.stringify(data));
 
     return true;
   };
-
 }
+
 const login = new LoginStore();
 export { login };
